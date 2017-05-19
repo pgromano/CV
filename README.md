@@ -1,3 +1,14 @@
 # Pablo Romano's CV
 
-This CV template was adapted from [posquit0's](https://github.com/posquit0)  [AwesomeCV](https://github.com/posquit0/Awesome-CV).
+My CV written in LaTeX.
+
+##### Usage
+
+At a command prompt, run
+
+> xelatex CV.tex
+
+This should result in the creation of CV.pdf
+
+##### Credit
+The template was adapted from [posquit0's](https://github.com/posquit0)  [AwesomeCV](https://github.com/posquit0/Awesome-CV).
