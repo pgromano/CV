@@ -1,6 +1,6 @@
 # Pablo Romano's CV
 
-My CV written in LaTeX.
+My [CV](./CV.pdf) written in LaTeX.
 
 ##### Usage
 
