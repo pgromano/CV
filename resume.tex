@@ -1,0 +1,81 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Edited:
+% Pablo G. Romano <pablo.romano42@gmail.com>
+% https://github.com/pgromano
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+\colorlet{awesome}{UO-Dark-Green}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[./fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{./sections/}
+
+% Configure page margins with geometry
+\geometry{left=1.5cm, top=2.5cm, right=1.5cm, bottom=1.0cm, footskip=0.0cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Pablo G.}{Romano}
+\position{Data Scientist}
+% \address{Oregon}
+\mobile{(123) 456-7890}
+\email{pablo.romano42@gmail.com}
+\github{pgromano}
+\linkedin{pgromano}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	%%% Make header with alignment (C: center, L: left, R: right)
+	\makecvheader[C]
+
+	%%% Make footer with alignment (<left>, <center>, <right>)
+	%\makecvfooter
+	%  {Pablo G. Romano}
+	%  {}
+	%  {\thepage}
+
+	%%% Import content
+	\import{\sectiondir}{summary.tex}
+	\import{\sectiondir}{skills.tex}
+	\import{\sectiondir}{research.tex}
+	\import{\sectiondir}{education.tex}
+	\import{\sectiondir}{projects.tex}
+	\import{\sectiondir}{publications.tex}
+	\import{\sectiondir}{presentation.tex}
+	%\import{\sectiondir}{publications.tex}
+
+\end{document}
